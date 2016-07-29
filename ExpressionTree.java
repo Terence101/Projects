@@ -43,7 +43,6 @@ public class ExpressionTree{
            
            operator.left = left;
            operator.right = right;
-           
            keep.push(operator);
            temp3 = keep.pop();
        }

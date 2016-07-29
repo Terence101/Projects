@@ -21,9 +21,9 @@ public class ExpressionTree{
                Node temp2 = keep.pop();
                
                while(temp2.val != '('){
-                   Node left = temp2;
+                   Node right = temp2;
                    Node operator = keep.pop();
-                   Node right = keep.pop();
+                   Node left = keep.pop();
                    
                    operator.left = left;
                    operator.right = right;
@@ -37,9 +37,9 @@ public class ExpressionTree{
        Node temp3 = keep.pop();
        
        while(!keep.empty()){
-           Node left = temp3;
+           Node right = temp3;
            Node operator = keep.pop();
-           Node right = keep.pop();
+           Node left = keep.pop();
            
            operator.left = left;
            operator.right = right;
